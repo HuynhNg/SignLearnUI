@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignLearn - Quản lý từ vựng</title>
+    <link rel="stylesheet" href="management-word.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <div class="logo">
+                    <span class="logo-icon">SL</span>
+                    <span class="logo-text">SignLearn</span>
+                </div>
+                <nav class="nav-tabs">
+                    <a href="Management_main.html" class="nav-tab">Tổng quan</a>
+                    <a href="Management_User.html" class="nav-tab">Quản lý người dùng</a>
+                    <a href="Management_Topic.html" class="nav-tab">Tài nguyên học tập</a>
+                </nav>
+            </div>
+            <div class="header-right">
+                <button class="notification-btn">🔔</button>
+                <div class="user-avatar">AD</div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="page-header">
+                <h1>Quản lý từ vựng - Chủ đề Số đếm</h1>
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+                <div class="search-container">
+                    <input type="text" placeholder="Tìm kiếm từ vựng..." class="search-input">
+                </div>
+                <div class="control-buttons">
+                    <button class="btn btn-primary">+ Thêm từ vựng mới</button>
+                    <select class="filter-select">
+                        <option>Tất cả mức độ</option>
+                        <option>Dễ</option>
+                        <option>Trung bình</option>
+                        <option>Khó</option>
+                    </select>
+                    <select class="filter-select">
+                        <option>Tất cả trạng thái</option>
+                        <option>Đang sử dụng</option>
+                        <option>Ẩn</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Word Table -->
+            <div class="table-container">
+                <table class="word-table">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Từ vựng</th>
+                            <th>Hình ảnh</th>
+                            <th>Mức độ</th>
+                            <th>Trạng thái</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Một</td>
+                            <td>
+                                <div class="video-thumbnail">
+                                    <img src="/lovable-uploads/78e6c8ea-2b2d-4a23-93ba-1069262ed406.png" alt="Một" class="thumbnail-img">
+                                    <div class="play-button">▶</div>
+                                </div>
+                            </td>
+                            <td><span class="difficulty-badge easy">Dễ</span></td>
+                            <td><span class="status-badge active">Đang sử dụng</span></td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn view">👁️</button>
+                                    <button class="action-btn edit">✏️</button>
+                                    <button class="action-btn delete">🗑️</button>
+                                    <button class="action-btn play">▶</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Hai</td>
+                            <td>
+                                <div class="video-thumbnail">
+                                    <img src="/lovable-uploads/78e6c8ea-2b2d-4a23-93ba-1069262ed406.png" alt="Hai" class="thumbnail-img">
+                                    <div class="play-button">▶</div>
+                                </div>
+                            </td>
+                            <td><span class="difficulty-badge medium">Trung bình</span></td>
+                            <td><span class="status-badge active">Đang sử dụng</span></td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn view">👁️</button>
+                                    <button class="action-btn edit">✏️</button>
+                                    <button class="action-btn delete">🗑️</button>
+                                    <button class="action-btn play">▶</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Ba</td>
+                            <td>
+                                <div class="video-thumbnail">
+                                    <img src="/lovable-uploads/78e6c8ea-2b2d-4a23-93ba-1069262ed406.png" alt="Ba" class="thumbnail-img">
+                                    <div class="play-button">▶</div>
+                                </div>
+                            </td>
+                            <td><span class="difficulty-badge hard">Khó</span></td>
+                            <td><span class="status-badge hidden">Ẩn</span></td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn view">👁️</button>
+                                    <button class="action-btn edit">✏️</button>
+                                    <button class="action-btn delete">🗑️</button>
+                                    <button class="action-btn play">▶</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <span class="pagination-info">Hiển thị 1-3 trong tổng số 50 mục</span>
+                <div class="pagination-controls">
+                    <div class="page-buttons">
+                        <button class="page-btn">‹</button>
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <button class="page-btn">4</button>
+                        <button class="page-btn">5</button>
+                        <button class="page-btn">›</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>SignLearn</h4>
+                    <p>Giúp mọi người tiếp cận với ngôn ngữ ký hiệu để dễ dàng hơn thông qua công nghệ.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Sản phẩm</h4>
+                    <a href="#">Tính năng</a>
+                    <a href="#">Bảng giá</a>
+                    <a href="#">Hướng dẫn</a>
+                    <a href="#">Cập nhật</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Công ty</h4>
+                    <a href="#">Về chúng tôi</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Đối tác</a>
+                    <a href="#">Liên hệ</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Hỗ trợ</h4>
+                    <a href="#">Trung tâm trợ giúp</a>
+                    <a href="#">Điều khoản</a>
+                    <a href="#">Bảo mật</a>
+                    <a href="#">Cookie</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 SignLearn. Đã đăng ký bản quyền.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

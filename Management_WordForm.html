@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignLearn - Chính sửa từ vựng</title>
+    <link rel="stylesheet" href="management-wordform.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <div class="logo">
+                    <span class="logo-icon">SL</span>
+                    <span class="logo-text">SignLearn</span>
+                </div>
+                <nav class="nav-tabs">
+                    <a href="Management_main.html" class="nav-tab">Tổng quan</a>
+                    <a href="Management_User.html" class="nav-tab">Quản lý người dùng</a>
+                    <a href="Management_Topic.html" class="nav-tab active">Tài nguyên học tập</a>
+                </nav>
+            </div>
+            <div class="header-right">
+                <button class="notification-btn">🔔</button>
+                <div class="user-avatar">AD</div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="page-header">
+                <h1>Chỉnh sửa từ vựng</h1>
+            </div>
+
+            <div class="form-container">
+                <div class="form-section">
+                    <form class="word-form">
+                        <div class="form-group">
+                            <label for="word" class="form-label">Từ vựng:</label>
+                            <input type="text" id="word" class="form-input" value="Hello" placeholder="Nhập từ vựng...">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="meaning" class="form-label">Nghĩa:</label>
+                            <textarea id="meaning" class="form-textarea" placeholder="Nhập nghĩa của từ...">Xin chào</textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="topic" class="form-label">Chủ đề:</label>
+                            <select id="topic" class="form-select">
+                                <option value="">Chọn chủ đề...</option>
+                                <option value="basic" selected>Chào hỏi cơ bản</option>
+                                <option value="numbers">Số đếm</option>
+                                <option value="family">Gia đình</option>
+                                <option value="colors">Màu sắc</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="video" class="form-label">URL Video:</label>
+                            <input type="url" id="video" class="form-input" placeholder="Nhập URL video minh họa...">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Xem trước video:</label>
+                            <div class="video-preview">
+                                <div class="video-placeholder">
+                                    <div class="play-icon">▶</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-secondary">Lưu thay đổi</button>
+                            <button type="button" class="btn btn-ghost">Hủy</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="sidebar">
+                    <div class="sidebar-section">
+                        <h3>Từ vựng liên quan</h3>
+                        <div class="related-words">
+                            <div class="related-word-item">
+                                <input type="checkbox" id="hi" class="word-checkbox">
+                                <label for="hi" class="word-label">Hi</label>
+                            </div>
+                            <div class="related-word-item">
+                                <input type="checkbox" id="good-morning" class="word-checkbox">
+                                <label for="good-morning" class="word-label">Good morning</label>
+                            </div>
+                            <div class="related-word-item">
+                                <input type="checkbox" id="good-afternoon" class="word-checkbox">
+                                <label for="good-afternoon" class="word-label">Good afternoon</label>
+                            </div>
+                            <div class="related-word-item">
+                                <input type="checkbox" id="goodbye" class="word-checkbox">
+                                <label for="goodbye" class="word-label">Goodbye</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <h3>Chủ đề phổ biến</h3>
+                        <div class="popular-topics">
+                            <span class="topic-tag">Chào hỏi</span>
+                            <span class="topic-tag">Gia đình</span>
+                            <span class="topic-tag">Cảm xúc</span>
+                            <span class="topic-tag">Giáo dục</span>
+                            <span class="topic-tag">Thể thao</span>
+                            <span class="topic-tag">Du lịch</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>SignLearn</h4>
+                    <p>Giúp mọi người tiếp cận với ngôn ngữ ký hiệu để dễ dàng hơn thông qua công nghệ.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Sản phẩm</h4>
+                    <a href="#">Tính năng</a>
+                    <a href="#">Bảng giá</a>
+                    <a href="#">Hướng dẫn</a>
+                    <a href="#">Cập nhật</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Công ty</h4>
+                    <a href="#">Về chúng tôi</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Đối tác</a>
+                    <a href="#">Liên hệ</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Hỗ trợ</h4>
+                    <a href="#">Trung tâm trợ giúp</a>
+                    <a href="#">Điều khoản</a>
+                    <a href="#">Bảo mật</a>
+                    <a href="#">Cookie</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 SignLearn. Đã đăng ký bản quyền.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignLearn - Quản lý người dùng</title>
+    <link rel="stylesheet" href="management-user.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <div class="logo">
+                    <span class="logo-icon">SL</span>
+                    <span class="logo-text">SignLearn</span>
+                </div>
+                <nav class="nav-tabs">
+                    <a href="Management_main.html" class="nav-tab">Tổng quan</a>
+                    <a href="#" class="nav-tab active">Quản lý người dùng</a>
+                    <a href="Management_Topic.html" class="nav-tab">Tài nguyên học tập</a>
+                </nav>
+            </div>
+            <div class="header-right">
+                <button class="notification-btn">🔔</button>
+                <div class="user-avatar">AD</div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="page-header">
+                <h1>Quản lý người dùng</h1>
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+                <div class="search-container">
+                    <input type="text" placeholder="Tìm kiếm người dùng..." class="search-input">
+                </div>
+                <div class="control-buttons">
+                    <button class="btn btn-primary">+ Thêm người dùng</button>
+                    <select class="status-filter">
+                        <option>Trạng thái</option>
+                        <option>Hoạt động</option>
+                        <option>Không hoạt động</option>
+                    </select>
+                    <select class="date-filter">
+                        <option>Ngày tham gia</option>
+                        <option>Hôm nay</option>
+                        <option>Tuần này</option>
+                        <option>Tháng này</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- User Table -->
+            <div class="table-container">
+                <table class="user-table">
+                    <thead>
+                        <tr>
+                            <th>Người dùng</th>
+                            <th>Email</th>
+                            <th>Số điện thoại</th>
+                            <th>Trạng thái</th>
+                            <th>Ngày tham gia</th>
+                            <th>Tác vụ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="user-info">
+                                    <div class="user-avatar-table">NA</div>
+                                    <span class="user-name">Nguyễn Văn An</span>
+                                </div>
+                            </td>
+                            <td>nguyenvanan@gmail.com</td>
+                            <td>0912345678</td>
+                            <td><span class="status-badge active">Hoạt động</span></td>
+                            <td>15/01/2024</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn view">👁️</button>
+                                    <button class="action-btn edit">✏️</button>
+                                    <button class="action-btn delete">🔒</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="user-info">
+                                    <div class="user-avatar-table">TB</div>
+                                    <span class="user-name">Trần Thị Bình</span>
+                                </div>
+                            </td>
+                            <td>tranthibinh@gmail.com</td>
+                            <td>0987654321</td>
+                            <td><span class="status-badge active">Hoạt động</span></td>
+                            <td>20/01/2024</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn view">👁️</button>
+                                    <button class="action-btn edit">✏️</button>
+                                    <button class="action-btn delete">🔒</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="user-info">
+                                    <div class="user-avatar-table">LC</div>
+                                    <span class="user-name">Lê Văn Cường</span>
+                                </div>
+                            </td>
+                            <td>levancuong@gmail.com</td>
+                            <td>0977888999</td>
+                            <td><span class="status-badge inactive">Không hoạt động</span></td>
+                            <td>10/12/2023</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn view">👁️</button>
+                                    <button class="action-btn edit">✏️</button>
+                                    <button class="action-btn delete">🔒</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- User Detail Panel -->
+            <div class="user-detail-panel">
+                <div class="user-detail-header">
+                    <div class="user-profile">
+                        <div class="user-avatar-large">NA</div>
+                        <div class="user-basic-info">
+                            <h3>Nguyễn Văn An</h3>
+                            <p>Thông tin cá nhân</p>
+                        </div>
+                    </div>
+                    <div class="user-status-info">
+                        <div class="status-item">
+                            <span class="status-label">Trạng thái</span>
+                            <span class="status-value active">Hoạt động</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">Ngày tham gia</span>
+                            <span class="status-value">15/01/2024</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">Lần đăng nhập cuối</span>
+                            <span class="status-value">Hôm nay, 10:30</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="user-detail-content">
+                    <div class="detail-section">
+                        <h4>Contact Information</h4>
+                        <div class="detail-item">
+                            <span class="detail-label">Email:</span>
+                            <span class="detail-value">nguyenvanan@gmail.com</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Số điện thoại:</span>
+                            <span class="detail-value">0912345678</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Ngày sinh:</span>
+                            <span class="detail-value">05/03/1990</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Địa chỉ:</span>
+                            <span class="detail-value">123 Đường Lê Lợi, Quận 1, TP HCM</span>
+                        </div>
+                    </div>
+
+                    <div class="detail-section">
+                        <h4>Hoạt động gần đây</h4>
+                        <div class="activity-item">
+                            <span class="activity-icon">🔑</span>
+                            <div class="activity-content">
+                                <span class="activity-text">Đăng nhập vào hệ thống</span>
+                                <span class="activity-time">10:30</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-icon">✏️</span>
+                            <div class="activity-content">
+                                <span class="activity-text">Cập nhật thông tin cá nhân</span>
+                                <span class="activity-time">Hôm qua</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>SignLearn</h4>
+                    <p>Giúp mọi người tiếp cận với ngôn ngữ ký hiệu để đảng hơn thông qua công nghệ.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Sản phẩm</h4>
+                    <a href="#">Tính năng</a>
+                    <a href="#">Bảng giá</a>
+                    <a href="#">Hướng dẫn</a>
+                    <a href="#">Cập nhật</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Công ty</h4>
+                    <a href="#">Về chúng tôi</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Đối tác</a>
+                    <a href="#">Liên hệ</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Hỗ trợ</h4>
+                    <a href="#">Trung tâm trợ giúp</a>
+                    <a href="#">Điều khoản</a>
+                    <a href="#">Bảo mật</a>
+                    <a href="#">Cookie</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 SignLearn. Đã đăng ký bản quyền.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

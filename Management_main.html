@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignLearn - Quản lý chính</title>
+    <link rel="stylesheet" href="management-main.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <div class="logo">
+                    <span class="logo-icon">SL</span>
+                    <span class="logo-text">SignLearn</span>
+                </div>
+                <nav class="nav-tabs">
+                    <a href="#" class="nav-tab active">Tổng quan</a>
+                    <a href="Management_User.html" class="nav-tab">Quản lý người dùng</a>
+                    <a href="Management_Topic.html" class="nav-tab">Tài nguyên học tập</a>
+                </nav>
+            </div>
+            <div class="header-right">
+                <button class="notification-btn">🔔</button>
+                <div class="user-avatar">AD</div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Statistics Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-content">
+                        <div class="stat-label">Tổng số người dùng</div>
+                        <div class="stat-value">1,234</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🕐</div>
+                    <div class="stat-content">
+                        <div class="stat-label">Giờ học trung bình</div>
+                        <div class="stat-value">2,567</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">📖</div>
+                    <div class="stat-content">
+                        <div class="stat-label">Tài nguyên đang hoạt động</div>
+                        <div class="stat-value">89</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">✅</div>
+                    <div class="stat-content">
+                        <div class="stat-label">Tỷ lệ hoàn thành</div>
+                        <div class="stat-value">78%</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charts Section -->
+            <div class="charts-section">
+                <div class="chart-container">
+                    <h3>Thống kê giờ học theo tháng</h3>
+                    <canvas id="monthlyChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Phần bộ giờ học theo môn học</h3>
+                    <canvas id="subjectChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Tables Section -->
+            <div class="tables-section">
+                <div class="table-container">
+                    <div class="table-header">
+                        <h3>Quản lý người dùng</h3>
+                        <a href="Management_User.html" class="view-all-link">Xem tất cả ></a>
+                    </div>
+                    <table class="data-table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="user-info">
+                                        <div class="user-avatar-small">NA</div>
+                                        <div>
+                                            <div class="user-name">Nguyễn Văn A</div>
+                                            <div class="user-email">nguyenvana@gmail.com</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="progress-number">24</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="user-info">
+                                        <div class="user-avatar-small">TB</div>
+                                        <div>
+                                            <div class="user-name">Trần Thị B</div>
+                                            <div class="user-email">tranthi@gmail.com</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="progress-number">18</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="user-info">
+                                        <div class="user-avatar-small">LC</div>
+                                        <div>
+                                            <div class="user-name">Lê Văn C</div>
+                                            <div class="user-email">levanc@gmail.com</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="progress-number">22</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-container">
+                    <div class="table-header">
+                        <h3>Quản lý tài nguyên</h3>
+                        <a href="Management_Topic.html" class="view-all-link">Xem tất cả ></a>
+                    </div>
+                    <table class="data-table">
+                        <tbody>
+                            <tr>
+                                <td>Chủ đề cơ bản</td>
+                                <td><span class="progress-number green">24</span></td>
+                            </tr>
+                            <tr>
+                                <td>Số đếm</td>
+                                <td><span class="progress-number green">10</span></td>
+                            </tr>
+                            <tr>
+                                <td>Gia đình</td>
+                                <td><span class="progress-number green">12</span></td>
+                            </tr>
+                            <tr>
+                                <td>Thời gian</td>
+                                <td><span class="progress-number green">15</span></td>
+                            </tr>
+                            <tr>
+                                <td>Cảm xúc</td>
+                                <td><span class="progress-number green">15</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>SignLearn</h4>
+                    <p>Nền tảng học ngôn ngữ ký hiệu trực tuyến hàng đầu Việt Nam</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Khóa học</h4>
+                    <a href="#">Khóa học cơ bản</a>
+                    <a href="#">Khóa học nâng cao</a>
+                    <a href="#">Học theo chủ đề</a>
+                    <a href="#">Từ điển</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Hỗ trợ</h4>
+                    <a href="#">Hướng dẫn sử dụng</a>
+                    <a href="#">Câu hỏi thường gặp</a>
+                    <a href="#">Liên hệ</a>
+                    <a href="#">Phản hồi</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Theo dõi chúng tôi</h4>
+                    <a href="#">Facebook</a>
+                    <a href="#">Youtube</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 SignLearn. Bản quyền thuộc quyền.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="management-main.js"></script>
+</body>
+</html>
